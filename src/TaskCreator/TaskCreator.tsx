@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import "./TaskCreator.css";
 
-function TaskCreator() {
+interface TaskCreatorProps {
+  inputTask: (event: React.FormEvent<HTMLFormElement>) => void;
+}
+
+const TaskCreator: FC<TaskCreatorProps> = ({ inputTask }) => {
   return (
-    <form className="task-creator-container">
+    <form onSubmit={inputTask} className="task-creator-container">
       <div className="input-container">
         <div className="input__left-block"></div>
         <input
@@ -18,6 +22,6 @@ function TaskCreator() {
       </button>
     </form>
   );
-}
+};
 
 export default TaskCreator;
