@@ -11,6 +11,7 @@ const TaskCreator: FC<TaskCreatorProps> = ({ inputTask }) => {
       <div className="input-container">
         <div className="input__left-block"></div>
         <input
+          data-testid="task-input"
           type="text"
           name="task"
           className="input__text-box"
