@@ -1,10 +1,13 @@
+* {
+  border-radius: 3px;
+}
+
 .task-creator-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
   border: 1px solid rgb(184, 184, 184);
-  border-radius: 3px;
   padding: 1rem;
 }
 
@@ -16,20 +19,17 @@
   width: 2rem;
   height: 2rem;
   background-color: rgb(36, 164, 181);
-  border-radius: 3px;
 }
 
 .input__text-box {
   width: 100%;
   padding-left: 0.75rem;
   border: 1px solid rgb(184, 184, 184);
-  border-radius: 3px;
 }
 
 .task-creator__add-task {
   background-color: rgb(36, 164, 181);
   color: white;
   border: 0;
-  border-radius: 3px;
   padding: 0.5rem;
 }
