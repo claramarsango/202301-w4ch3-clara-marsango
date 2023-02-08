@@ -1,4 +1,5 @@
 import React from "react";
+import "./TaskCreator.css";
 
 function TaskCreator() {
   return (
@@ -9,7 +10,7 @@ function TaskCreator() {
           type="text"
           name="task"
           className="input__text-box"
-          placeholder="New Todo"
+          placeholder="New To Do"
         />
       </div>
       <button type="submit" className="task-creator__add-task">
